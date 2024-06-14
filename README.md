@@ -1,3 +1,26 @@
+## ros_workspace (jazzy) - 1.0.3-7
+
+The packages in the `ros_workspace` repository were released into the `jazzy` distro by running `/home/z572/gits/revyos-ros/venv/bin/bloom-release -r jazzy ros_workspace --override-release-repository-push-url git@github.com:revyos-ros/ros_workspace-release.git` on `Fri, 14 Jun 2024 08:17:02 -0000`
+
+The `ros_workspace` package was released.
+
+Version of package(s) in repository `ros_workspace`:
+
+- upstream repository: https://github.com/ros2/ros_workspace.git
+- release repository: https://github.com/revyos-ros/ros_workspace-release.git
+- rosdistro version: `1.0.3-6`
+- old version: `1.0.3-6`
+- new version: `1.0.3-7`
+
+Versions of tools used:
+
+- bloom version: `0.12.0`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.22.2`
+- rosdistro version: `0.9.0`
+- vcstools version: `0.1.42`
+
+
 ## ros_workspace (humble) - 1.0.3-1
 
 The packages in the `ros_workspace` repository were released into the `humble` distro by running `/home/z572/gits/revyos-ros/venv/bin/bloom-release -r humble ros_workspace` on `Sun, 28 Apr 2024 03:03:12 -0000`
