@@ -1,4 +1,4 @@
-release_repo_url: git@github.com:ros2-gbp/ros_workspace-release
+release_repo_url: git@github.com:revyos-ros/ros_workspace-release.git
 tracks:
   ardent:
     actions:
