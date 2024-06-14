@@ -1,0 +1,26 @@
+From cc4d90b1f436aaf2d8eedb8e546a92d30cf31f66 Mon Sep 17 00:00:00 2001
+From: Zheng Junjie <zhengjunjie@iscas.ac.cn>
+Date: Mon, 15 Apr 2024 17:00:47 +0800
+Subject: [PATCH] Update python versions in PYTHONPATH patch.
+
+---
+ debian/rules.em | 3 +++
+ 1 file changed, 3 insertions(+)
+
+diff --git a/debian/rules.em b/debian/rules.em
+index 284a071..f48113b 100755
+--- a/debian/rules.em
++++ b/debian/rules.em
+@@ -26,6 +26,9 @@ export DEB_HOST_MULTIARCH := $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
+ 
+ DEB_HOST_GNU_TYPE ?= $(shell dpkg-architecture -qDEB_HOST_GNU_TYPE)
+ 
++# Needed to bootstrap since the ros_workspace package does not yet exist.
++export PYTHONPATH=@(InstallationPrefix)/lib/python3.12/site-packages:@(InstallationPrefix)/lib/python3.11/site-packages
++
+ %:
+ 	dh $@@ -v --buildsystem=cmake --builddirectory=.obj-$(DEB_HOST_GNU_TYPE)
+ 
+-- 
+2.41.0
+
